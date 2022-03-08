@@ -4,21 +4,23 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../iv" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/image-validation-application" />
+        <option name="gradleHome" value="$USER_HOME$/.sdkman/candidates/gradle/7.2" />
         <option name="gradleJvm" value="#JAVA_HOME" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/../iv" />
+            <option value="$PROJECT_DIR$/image-validation-application" />
           </set>
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../iv-backend" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/image-validation-library" />
+        <option name="gradleHome" value="$USER_HOME$/.sdkman/candidates/gradle/7.2" />
         <option name="gradleJvm" value="#JAVA_HOME" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/../iv-backend" />
+            <option value="$PROJECT_DIR$/image-validation-library" />
           </set>
         </option>
       </GradleProjectSettings>

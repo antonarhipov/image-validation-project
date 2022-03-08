@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/../iv" />
+    <file type="web" url="file://$PROJECT_DIR$/image-validation-application" />
+    <file type="web" url="file://$PROJECT_DIR$/image-validation-library" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectRootManager">
-    <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
