@@ -13,10 +13,6 @@ repositories {
     mavenCentral()
 }
 
-repositories {
-    mavenCentral()
-}
-
 kotlin {
     jvm {
         compilations.all {
@@ -43,6 +39,7 @@ kotlin {
         }
         val jvmMain by getting {
             dependencies {
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.0")
                 implementation("org.jetbrains.kotlinx:kotlin-deeplearning-api:$kotlinDLVersion")
                 implementation("org.jetbrains.kotlinx:kotlin-deeplearning-onnx:$kotlinDLVersion")
             }
