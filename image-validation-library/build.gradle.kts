@@ -11,6 +11,9 @@ val kotlinDLVersion = "0.3.0"
 
 repositories {
     mavenCentral()
+//    maven {
+//        url = uri("https://packages.jetbrains.team/maven/p/ki/maven")
+//    }
 }
 
 kotlin {
@@ -42,6 +45,7 @@ kotlin {
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.0")
                 implementation("org.jetbrains.kotlinx:kotlin-deeplearning-api:$kotlinDLVersion")
                 implementation("org.jetbrains.kotlinx:kotlin-deeplearning-onnx:$kotlinDLVersion")
+//                api("io.kinference:inference:0.1.12")
             }
         }
         val jvmTest by getting {
@@ -74,5 +78,14 @@ npmPublishing {
             registry = uri("https://registry.npmjs.org")
             authToken = ""
         }
+    }
+}
+
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+    kotlinOptions {
+        freeCompilerArgs += listOf(
+            "-Xjsr305=strict",
+            "-Xopt-in=kotlin.RequiresOptIn",
+        )
     }
 }
